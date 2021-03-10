@@ -1,0 +1,13 @@
+<div class = "books-show-item">
+ <p>
+ <strong>Title:</strong>
+ <%= @book.title%>
+ </p>
+ <p>
+ <strong>Body:</strong>
+ <%= @book.body%>
+ </p>
+</div>
+
+<%= link_to("Edit","/books/#{@book.id}/edit")%>
+<%= link_to("Back","/books")%>
